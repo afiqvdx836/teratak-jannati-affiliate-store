@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f6f1ea;
+  --color-paper: #fbf8f4;
+  --color-ink: #1f1b16;
+  --color-muted: #6b6259;
+  --color-line: #e6ddd1;
+  --color-line-strong: #d6cabb;
+  --color-chip: #efe6da;
+  --color-accent: #b5482a;
+  --color-shopee: #c8391b;
+  --color-danger: #a3301a;
+  --color-ok: #1f5a3e;
+  --color-ok-bg: #ddebe3;
+  --color-video: #3a322b;
+
+  --font-sans: "Plus Jakarta Sans Variable", system-ui, sans-serif;
+  --font-display: "Fraunces Variable", Georgia, serif;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ─── Skema latar belakang ──────────────────────────────────────────────── */
+
+[data-scheme="white"] body {
+  --color-cream: #ffffff;
+  --color-paper: #fafafa;
+  --color-line: #e5e5e5;
+  --color-line-strong: #d4d4d4;
+  --color-chip: #f0f0f0;
+  background: var(--color-cream);
+}
+
+[data-scheme="dark"] body {
+  --color-cream: #171412;
+  --color-paper: #1f1b18;
+  --color-ink: #f0ece6;
+  --color-muted: #a09888;
+  --color-line: #2e2a25;
+  --color-line-strong: #3d3730;
+  --color-chip: #2a2520;
+  --color-video: #1a1714;
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
